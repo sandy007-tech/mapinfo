@@ -1,8 +1,11 @@
 export default function DonorDarahPage() {
   return (
     <div className="min-h-screen bg-white text-green-900 p-6">
+      <h1 className="text-4xl font-bold text-center mb-1">
+        Aksi Donor Darah 
+      </h1>
       <h1 className="text-4xl font-bold text-center mb-10">
-        Aksi Donor Darah PT. Mulia Agro Permai
+        PT. Mulia Agro Permai
       </h1>
       <p className="mb-4 text-justify">
         Sebagai salah satu wujud cinta tanah air dan peduli terhadap sesama, PT. Mulia Agro Permai di Sampit bekerja sama dengan Palang Merah Indonesia (PMI) di Kabupaten Kotawaringin Timur melakukan Kegiatan Donor Darah. Acara berlangsung pada hari Sabtu, 14 Juni 2025 bertempat di Klinik Pratama PT. Mulia Agro Permai. Kegiatan donor darah ini merupakan CSR Serentak dari seluruh KLK Group dalam rangka memperingati hari donor darah sedunia.

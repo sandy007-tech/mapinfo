@@ -67,7 +67,7 @@ export default function HomePage() {
             <div className="p-4">
               <h3 className="text-lg text-green-900 font-semibold mb-2">Program Donor Darah Dalam Membantu UTD Dalam Penyediaan Kantong Darah</h3>
               <p className="text-sm text-gray-600 mb-2">14 Juli 2025</p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-800 mb-4">
                 PT. Mulia Agro Permai berkolaborasi dengan PMI Kota Sampit dalam mengadakan kegiatan donor darah dengan mengajak seluruh karyawan PT. KLK Region Kalteng.
               </p>
               <Link

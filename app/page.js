@@ -1,6 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function HomePage() {
+  const [nama, setNama] = useState("");
+  const [email, setEmail] = useState("");
+  const [pesan, setPesan] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert(`Nama: ${nama}\nEmail: ${email}\nPesan: ${pesan}`);
+    setNama("");
+    setEmail("");
+    setPesan("");
+  }
+
   return (
     <div className="relative min-h-screen">
       {/* Background image */}
@@ -14,8 +29,8 @@ export default function HomePage() {
         <nav className="bg-red-900 bg-opacity-70 text-white p-3 flex items-center justify-between rounded mb-6">
           {/* Logo dan Judul */}
           <div className="flex items-center space-x-4">
-            <img src="/logo.png" alt="Logo" className="max-w-[100px] h-auto" />
-            <div className="text-2xl font-bold">MAPINFO</div>
+            <img src="/logo.png" alt="Logo" className="max-w-[100px] h-auto mt-[-10]" />
+            <div className="text-xl font-bold mt-2">KLK KALTENG NEWS</div>
           </div>
 
           {/* Navigasi */}
@@ -30,8 +45,8 @@ export default function HomePage() {
 
       {/* Beranda */}
       <section id="beranda" className="relative z-10 text-center text-white py-24 px-4">
-        <h1 className="text-4xl text-green-900 md:text-5xl font-bold mb-4">Selamat Datang di MAPINFO</h1>
-        <p className="text-lg md:text-xl text-green-900 mb-6">Portal Informasi PT. Mulia Agro Permai</p>
+        <h1 className="text-4xl text-green-900 md:text-5xl font-bold mb-4">Selamat Datang di KLK KALTENG NEWS</h1>
+        <p className="text-lg md:text-xl text-green-900 mb-6">Portal Informasi KLK Group Kalteng</p>
         <a href="#berita" className="bg-green-700 hover:bg-green-800 transition-colors px-6 py-3 rounded text-white font-semibold">
           Lihat Berita Terbaru
         </a>
@@ -105,24 +120,49 @@ export default function HomePage() {
       <section id="tentang" className="mb-12 relative z-10 bg-white bg-opacity-80 p-6 rounded max-w-3xl mx-auto">
         <h2 className="text-2xl text-center text-green-800 font-semibold mb-4">Tentang Website</h2>
         <p className="text-gray-800 text-center">
-          MAPINFO adalah portal informasi PT. Mulia Agro Permai, anak perusahaan dari PT. KLK yang bergerak di bidang perkebunan kelapa sawit.
+          KLK KALTENG NEWS adalah portal informasi PT. Mulia Agro Permai, anak perusahaan dari PT. KLK yang bergerak di bidang perkebunan kelapa sawit.
         </p>
       </section>
 
       {/* Kontak */}
       <section id="kontak" className="mb-12 relative z-10 bg-white bg-opacity-80 p-6 rounded max-w-3xl mx-auto">
         <h2 className="text-2xl text-green-800 font-semibold mb-4">Hubungi Kami</h2>
-        <form className="space-y-4">
-          <input type="text" placeholder="Nama" className="border p-2 w-full rounded text-green-800" />
-          <input type="email" placeholder="Email" className="border p-2 w-full rounded text-green-800" />
-          <textarea placeholder="Pesan" className="border p-2 w-full rounded h-24 text-green-800" />
-          <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded">Kirim</button>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="text"
+            placeholder="Nama"
+            value={nama}
+            onChange={(e) => setNama(e.target.value)}
+            className="border p-2 w-full rounded text-green-800"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="border p-2 w-full rounded text-green-800"
+            required
+          />
+          <textarea
+            placeholder="Pesan"
+            value={pesan}
+            onChange={(e) => setPesan(e.target.value)}
+            className="border p-2 w-full rounded h-24 text-green-800"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-green-600 text-white px-4 py-2 rounded"
+          >
+            Kirim
+          </button>
         </form>
       </section>
 
       {/* Footer */}
       <footer className="mt-16 border-t pt-6 text-center text-gray-500 text-sm relative z-10">
-        &copy; {new Date().getFullYear()} MAPINFO – PT. Mulia Agro Permai. All rights reserved.
+        &copy; {new Date().getFullYear()} KLK KALTENG NEWS – PT. Mulia Agro Permai. All rights reserved.
       </footer>
     </div>
   );

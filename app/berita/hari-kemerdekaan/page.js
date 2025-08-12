@@ -10,7 +10,7 @@ export default function HariKemerdekaanPage() {
         karyawan dan masyarakat sekitar.
       </p>
       <img 
-        src="/berita2.jpg" 
+        src="/berita3.jpg" 
         alt="Hari Kemerdekaan" 
         className="w-full max-w-2xl rounded-lg shadow-lg mb-4"
       />

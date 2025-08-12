@@ -60,24 +60,7 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold mb-8 text-center text-green-900">Berita Terbaru</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Berita 1 */}
-          <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-            <img src="/berita1.jpg" alt="Panen Raya" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-lg text-green-900 font-semibold mb-2">PT. Mulia Agro Permai Gelar Panen Raya Semester III 2025</h3>
-              <p className="text-sm text-gray-600 mb-2">5 Juni 2025</p>
-              <p className="text-gray-700 mb-4">
-                Panen raya jagung kali ini yang diadakan di kebun MAP Timur yang dihadiri oleh Wakil Bupati Kotawaringin Timur dan dinas pertanian serta pihak Polres dan Polda.
-              </p>
-              <Link
-                href="/berita/panen-raya"
-                className="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-              >
-                Baca Selengkapnya
-              </Link>
-            </div>
-          </article>
-
+          
           {/* Berita 2 */}
           <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
             <img src="/berita2.jpg" alt="Program CSR" className="w-full h-48 object-cover" />
@@ -96,24 +79,7 @@ export default function HomePage() {
             </div>
           </article>
 
-          {/* Berita 3 */}
-          <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-            <img src="/berita3.jpg" alt="Pelatihan K3" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-lg text-green-900 font-semibold mb-2">Kemeriahan Pengingatan Hari Kemerdekaan 17 Agustus PT. Mulia Agro Permai</h3>
-              <p className="text-sm text-gray-900 mb-2">28 Juli 2025</p>
-              <p className="text-gray-700 mb-4">
-                Tanggal 17 Agustus merupakan hari yang penting bagi rakyat Indonesia dimana merupakan hari kemerdekaan yang diwarnai dengan kemeriahan dan banyaknya perlombaan.
-              </p>
-              <Link
-                href="/berita/hari-kemerdekaan"
-                className="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-              >
-                Baca Selengkapnya
-              </Link>
-            </div>
-          </article>
-        </div>
+           </div>
       </section>
 
       {/* Tentang */}
